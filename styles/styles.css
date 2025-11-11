@@ -71,10 +71,11 @@ The keyword !important declares higher priority over the specific style rules fo
 
 .homepage-card img {
   width: 100%;
-  height: auto;
-  background-size: contain;
+  height: auto; /* change to 100rem for fixed height when only placeholders are used */
+  object-fit: cover;
+  background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../img/imgplaceholder.png");
+  background-image: url("https://placehold.co/100x100/orange/white?text=Image Placeholder");
   /* text-indent: -9999px; */ /* remove or comment out if all images are available */
 }
