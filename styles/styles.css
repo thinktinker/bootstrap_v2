@@ -1,0 +1,80 @@
+/* universal settings */
+*,*::before,*::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  /* outline: 1px dashed #ffff20; */
+}
+
+html{
+  font-size: 16px;                    /* 1 rem used on the page == 16px  */
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background-image: url("../img/motorsport.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size:cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+}
+
+/* 
+Bootstrap's style rules: .btn-primary has been overriden (below).
+The keyword !important declares higher priority over the specific style rules for .btn-primary.
+*/
+
+.btn-primary{
+  background-color:#ea383c !important;
+  border: none !important;
+}
+
+.btn-primary:hover{
+  background-color:rgba(234, 56, 59, 0.7) !important;
+  border: none !important;
+}
+
+
+.btn-primary-shadow{
+  box-shadow: .1rem .3rem .5rem rgba(0, 0, 0, 0.5);
+}
+
+/* banner colours */
+.herobanner{
+  min-height: 50dvh;
+  background-image: url("../img/sneaker.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herobanner  h1, .homebanner h4{
+  letter-spacing: 0.8rem;
+}
+
+.herobanner h1{
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.75), rgba(255, 255, 255, 0))
+}
+
+.shadow-effects {
+  color: transparent;
+  letter-spacing: .10em;
+  text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.6);
+}
+
+.bg-primary{
+  background-color:#ea383c !important;
+  border: none !important;
+}
+
+.homepage-card img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../img/imgplaceholder.png");
+  /* text-indent: -9999px; */ /* remove or comment out if all images are available */
+}
